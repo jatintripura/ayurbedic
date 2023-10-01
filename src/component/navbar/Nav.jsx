@@ -1,4 +1,3 @@
-// import photo_1 from "../../assets/img/Rectangle 458.png";
 import Button from "../button/Button";
 import Rat from "../rat/Rat";
 const Nav = () => {
@@ -28,8 +27,8 @@ const Nav = () => {
           </div>
         </div>
         <div>
-          <h1 className="text-[#121212] text-[70px] font-bold py-7">
-            World Best{" "}
+          <h1 className="text-[#121212] text-[70px] font-bold py-7 ">
+            World Best
             <span className="bg-[#376058] text-white px-2 text-center">
               Ayurvedic
             </span>
@@ -42,14 +41,43 @@ const Nav = () => {
             great reserch and experiments.
           </p>
         </div>
-        <div>
-          {/* <div>
-            <img src={photo_1} alt="" />
-          </div> */}
-          <div></div>
-          <div></div>
-        </div>
       </div>
+      {/* <div className=" relative  bg-[#F9F9F9] h-[471px] w-full py-[75px]">
+        <div className=" container mx-auto relative">
+          <div className=" absolute bottom-0 flex  items-end ">
+            <div>
+              <span className="bg-black">
+                <a href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="icon icon-tabler icon-tabler-arrow-narrow-right "
+                    width="44"
+                    height="44"
+                    viewBox="0 0 24 24"
+                    strokeWidth="2"
+                    stroke="#56yeff"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+
+                    <path d="M15 16l4 -4" />
+                    <path d="M15 8l4 4" />
+                  </svg>
+                </a>
+              </span>
+              <img src={photo_1} alt="" />
+            </div>
+            <div>
+              <img src={photo_2} alt="" />
+            </div>
+            <div>
+              <img src={photo_3} alt="" />
+            </div>
+          </div>
+        </div>
+      </div> */}
     </>
   );
 };
