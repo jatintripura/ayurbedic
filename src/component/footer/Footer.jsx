@@ -47,7 +47,7 @@ const Footer = () => {
                 <div>
                   <div className=" relative w-[70%]">
                     <input
-                      className="py-[18px] px-[16px] bg-[#F9F9F9] w-full"
+                      className="py-[18px] px-[16px] bg-[#F9F9F9] w-full outline-none"
                       type="email"
                       placeholder="Enter your mail."
                     />

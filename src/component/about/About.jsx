@@ -1,5 +1,4 @@
 import about from "../../assets/img/Rectangle 29.png";
-import vector from "../../assets/img/Vector 2.png";
 const About = () => {
   return (
     <>
@@ -18,8 +17,29 @@ const About = () => {
                     metus aliquam eleifend mi in.
                   </p>
                 </div>
-                <div className="bg-secondary  w-[60px] h-[60px] flex items-center justify-center text-center rounded-full cursor-pointer">
-                  <img src={vector} alt="" />
+                <div className="p-2 border-2 border-secondary rounded-full">
+                  <p className="p-6  rounded-full border-secondary border-2 bg-secondary">
+                    <a href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="icon icon-tabler icon-tabler-player-play-filled  stroke-[#fff] text-white"
+                        width="28"
+                        height="28"
+                        viewBox="0 0 24 24"
+                        strokeWidth="2.5"
+                        fill="none"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                          d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z"
+                          strokeWidth="0"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </a>
+                  </p>
                 </div>
               </div>
             </div>

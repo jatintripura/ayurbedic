@@ -27,12 +27,14 @@ const Products = () => {
             </div>
             <div>
               <ul className=" flex gap-12 text-[#5A5850] text-[18px] py-12">
-                <li className=" uppercase text-center">
-                  <a href="#">
-                    best seller
-                    <span>{<img src={svg} alt="svg" />}</span>
-                  </a>
-                </li>
+                <div className="relative">
+                  <p className="uppercase">
+                    <a href="#">best seller</a>
+                  </p>
+                  <span className="w-[170px] h-[12px] absolute bottom-0  -left-1/3 ">
+                    {<img src={svg} alt="svg" />}
+                  </span>
+                </div>
                 <li>
                   <a href="#">New Arrival</a>
                 </li>
