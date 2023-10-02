@@ -8,14 +8,13 @@ import Subscribe from "./component/subscribe/Subscribe";
 function App() {
   return (
     <>
-      <Nav></Nav>
-      <Product></Product>
-      <Products></Products>
-
-      <About></About>
-      <Customer></Customer>
-      <Subscribe></Subscribe>
-      <Footer></Footer>
+      <Nav />
+      <Product />
+      <Products />
+      <About />
+      <Customer />
+      <Subscribe />
+      <Footer />
     </>
   );
 }

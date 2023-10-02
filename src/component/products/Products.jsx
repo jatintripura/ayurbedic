@@ -28,12 +28,12 @@ const Products = () => {
             <div>
               <ul className=" flex gap-12 text-[#5A5850] text-[18px] py-12">
                 <div className="relative">
-                  <p className="uppercase">
-                    <a href="#">best seller</a>
-                  </p>
-                  <span className="w-[170px] h-[12px] absolute bottom-0  -left-1/3 ">
+                  <span className="w-[170px] h-[12px] absolute z-10 bottom-0  -left-1/3 ">
                     {<img src={svg} alt="svg" />}
                   </span>
+                  <p className="relative top-0 left-0 uppercase z-20">
+                    <a href="#">best seller</a>
+                  </p>
                 </div>
                 <li>
                   <a href="#">New Arrival</a>
@@ -51,10 +51,15 @@ const Products = () => {
             </div>
           </div>
 
-          <div className="grid gap-8">
-            <div className="flex items-center justify-between gap-[30px]">
-              <div className="bg-[#F9F9F9] p-[22px]">
-                <img src={image_1} alt="image 1" />
+          <div className="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-4">
+            {/* <div className="flex items-center justify-between gap-[30px]"> */}
+            <div className="flex items-center justify-center">
+              <div className="bg-[#f9f9f9] p-[22px] ">
+                <img
+                  src={image_1}
+                  alt="image 1"
+                  className="w-full h-full object-cover"
+                />
                 <h1 className="font-bold text-[24px] pt-[22px] pb-[12px] text-[#2A2A2A]">
                   Nesti Ayurvedic Facewash
                 </h1>
@@ -62,58 +67,7 @@ const Products = () => {
                   Dui ut ornare lectus sit amet. Urna nunc id cursus<br></br>
                   metus eleifend mi in.
                 </p>
-                <div className="flex itmes-center  gap-20">
-                  <div>
-                    <h1 className="text-[30px] font-bold text-[#2A2A2A]">
-                      $29.00
-                    </h1>
-                  </div>
-                  <div className="flex gap-1 items-center justify-center ">
-                    <img src={star} alt="" />
-                    <img src={star} alt="" />
-                    <img src={star} alt="" />
-                    <img src={star} alt="" />
-                    <img src={star} alt="" />
-                    <p>(19)</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-[#F9F9F9] p-[22px]">
-                <img src={image_2} alt="image 1" />
-                <h1 className="font-bold text-[24px] pt-[22px] pb-[12px] text-[#2A2A2A]">
-                  Tanda Ayurvedic Bodygel
-                </h1>
-                <p className="text-[14px] text-[#5A5850] leading-7 pb-[22px]">
-                  Dui ut ornare lectus sit amet. Urna nunc id cursus<br></br>
-                  metus eleifend mi in.
-                </p>
-                <div className="flex itmes-center  gap-20">
-                  <div>
-                    <h1 className="text-[30px] font-bold text-[#2A2A2A]">
-                      $29.00
-                    </h1>
-                  </div>
-                  <div className="flex gap-1 items-center justify-center ">
-                    <img src={star} alt="" />
-                    <img src={star} alt="" />
-                    <img src={star} alt="" />
-                    <img src={star} alt="" />
-                    <img src={star} alt="" />
-                    <p>(19)</p>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-[#F9F9F9] p-[22px]">
-                <img src={image_3} alt="image 1" />
-                <h1 className="font-bold text-[24px] pt-[22px] pb-[12px] text-[#2A2A2A]">
-                  Pata Ayurvedic Foundation
-                </h1>
-                <p className="text-[14px] text-[#5A5850] leading-7 pb-[22px]">
-                  Dui ut ornare lectus sit amet. Urna nunc id cursus<br></br>
-                  metus eleifend mi in.
-                </p>
-                <div className="flex itmes-center  gap-20">
+                <div className="flex items-center  justify-between">
                   <div>
                     <h1 className="text-[30px] font-bold text-[#2A2A2A]">
                       $29.00
@@ -130,7 +84,63 @@ const Products = () => {
                 </div>
               </div>
             </div>
-            <div className="flex items-center justify-between gap-[30px]">
+
+            <div className="flex items-center justify-center">
+              <div className="bg-[#F9F9F9] p-[22px]">
+                <img src={image_2} alt="image 1" />
+                <h1 className="font-bold text-[24px] pt-[22px] pb-[12px] text-[#2A2A2A]">
+                  Tanda Ayurvedic Bodygel
+                </h1>
+                <p className="text-[14px] text-[#5A5850] leading-7 pb-[22px]">
+                  Dui ut ornare lectus sit amet. Urna nunc id cursus<br></br>
+                  metus eleifend mi in.
+                </p>
+                <div className="flex items-center justify-between">
+                  <div>
+                    <h1 className="text-[30px] font-bold text-[#2A2A2A]">
+                      $29.00
+                    </h1>
+                  </div>
+                  <div className="flex gap-1 items-center justify-center ">
+                    <img src={star} alt="" />
+                    <img src={star} alt="" />
+                    <img src={star} alt="" />
+                    <img src={star} alt="" />
+                    <img src={star} alt="" />
+                    <p>(19)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="flex items-center justify-center">
+              <div className="bg-[#F9F9F9] p-[22px]">
+                <img src={image_3} alt="image 1" />
+                <h1 className="font-bold text-[24px] pt-[22px] pb-[12px] text-[#2A2A2A]">
+                  Pata Ayurvedic Foundation
+                </h1>
+                <p className="text-[14px] text-[#5A5850] leading-7 pb-[22px]">
+                  Dui ut ornare lectus sit amet. Urna nunc id cursus<br></br>
+                  metus eleifend mi in.
+                </p>
+                <div className="flex items-center justify-between ">
+                  <div>
+                    <h1 className="text-[30px] font-bold text-[#2A2A2A]">
+                      $29.00
+                    </h1>
+                  </div>
+                  <div className="flex gap-1 items-center justify-center ">
+                    <img src={star} alt="" />
+                    <img src={star} alt="" />
+                    <img src={star} alt="" />
+                    <img src={star} alt="" />
+                    <img src={star} alt="" />
+                    <p>(19)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex items-center justify-center">
               <div className="bg-[#F9F9F9] p-[22px]">
                 <img src={image_4} alt="image 1" />
                 <h1 className="font-bold text-[24px] pt-[22px] pb-[12px] text-[#2A2A2A]">
@@ -140,7 +150,7 @@ const Products = () => {
                   Dui ut ornare lectus sit amet. Urna nunc id cursus<br></br>
                   metus eleifend mi in.
                 </p>
-                <div className="flex itmes-center  gap-20">
+                <div className="flex items-center  justify-between">
                   <div>
                     <h1 className="text-[30px] font-bold text-[#2A2A2A]">
                       $29.00
@@ -156,7 +166,9 @@ const Products = () => {
                   </div>
                 </div>
               </div>
+            </div>
 
+            <div className="flex justify-center items-center">
               <div className="bg-[#F9F9F9] p-[22px]">
                 <img src={image_5} alt="image 1" />
                 <h1 className="font-bold text-[24px] pt-[22px] pb-[12px] text-[#2A2A2A]">
@@ -166,7 +178,7 @@ const Products = () => {
                   Dui ut ornare lectus sit amet. Urna nunc id cursus<br></br>
                   metus eleifend mi in.
                 </p>
-                <div className="flex itmes-center  gap-20">
+                <div className="flex items-center  justify-between">
                   <div>
                     <h1 className="text-[30px] font-bold text-[#2A2A2A]">
                       $29.00
@@ -182,6 +194,8 @@ const Products = () => {
                   </div>
                 </div>
               </div>
+            </div>
+            <div className="flex items-center justify-center">
               <div className="bg-[#F9F9F9] p-[22px]">
                 <img src={image_6} alt="image 1" />
                 <h1 className="font-bold text-[24px] pt-[22px] pb-[12px] text-[#2A2A2A]">
@@ -191,7 +205,7 @@ const Products = () => {
                   Dui ut ornare lectus sit amet. Urna nunc id cursus<br></br>
                   metus eleifend mi in.
                 </p>
-                <div className="flex itmes-center  gap-20">
+                <div className="flex items-center justify-between">
                   <div>
                     <h1 className="text-[30px] font-bold text-[#2A2A2A]">
                       $29.00
